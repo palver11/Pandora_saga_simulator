@@ -1,5 +1,5 @@
 # Pandora Saga Simulator  
-Stats calculator for the game Pandora Saga  
+Character calculator for the game Pandora Saga  
 
 
 ## ⌨️ Shortcut keys  
