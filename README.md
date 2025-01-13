@@ -2,7 +2,7 @@
 Character calculator for the game Pandora Saga  
 
 
-## ⌨️ Shortcut keys  (barely work)
+## ⌨️ Shortcut keys  
 
 [+/-]: Increase/decrease Lv by 1  
 
