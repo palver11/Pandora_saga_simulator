@@ -1,8 +1,8 @@
-MaxLv =  55; // 最大Lv
-MaxSt =  99; // 最大ステータス
-MaxSk = 120; // 最大潜在技能
+const MaxLv =  55; // Maximum LV
+const MaxSt =  99; // Maximum status
+const MaxSk = 120; // Most potential skills
 
-// ------------------------------ 種族
+// ------------------------------ Race
 Name['Race'] = new Array();
 Name['Race'][0] = new Array('人間'      ,'Human' ,'人類'  );
 Name['Race'][1] = new Array('エルフ'    ,'Elf'   ,'精靈'  );
@@ -11,7 +11,7 @@ Name['Race'][3] = new Array('マイリーン','Myrine','暗精靈');
 Name['Race'][4] = new Array('エンキドゥ','Enkidu','巨人'  );
 Name['Race'][5] = new Array('ラピン'    ,'Lapin' ,'拉比'  );
 
-// ------------------------------ 種族技能
+// ------------------------------ Racial skill
 Name['Race']['Skill'] = new Array();
 for (i=0;i<=5;i++)
   Name['Race']['Skill'][i] = new Array();
@@ -113,13 +113,13 @@ Status['Mod'][25] = new Array(73,119,4.86,12.63,12.88,13.63);
 Status['Mod'][26] = new Array(166,203,3.53,9.4,4.84,12.3);
 Status['Mod'][27] = new Array(151,195,3.339,11.23,5.26,10.14);
 
-// ------------------------------ 技能値       1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
-Skill['D'] = new Array(); // 最小             斬,突,払,打,防,射,調,暗,仕,回,慈,祝,祓,聖,元,具,暗,惑,種,騎
+// ------------------------ Skill Points       1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+Skill['D'] = new Array(); // Minimum           斬,突,払,打,防,射,調,暗,仕,回,慈,祝,祓,聖,元,具,暗,惑,種,騎 - it's skill branches names
 Skill['D'][ 0] = new Array('ウォーリア系'    , 5, 2, 5, 2, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 Skill['D'][ 1] = new Array('スカウト系'      , 4, 0, 0, 0, 0, 5, 4, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 Skill['D'][ 2] = new Array('アコライト系'    , 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0);
 Skill['D'][ 3] = new Array('メイジ系'        , 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 0, 5, 0, 0);
-Skill['P'] = new Array(); // 潜在             斬,突,払,打,防,射,調,暗,仕,回,慈,祝,祓,聖,元,具,暗,惑,種,騎
+Skill['P'] = new Array(); // Potential         斬,突,払,打,防,射,調,暗,仕,回,慈,祝,祓,聖,元,具,暗,惑,種,騎
 Skill['P'][ 0] = new Array('ウォーリア'      ,25,25,25,20,25, 5, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 Skill['P'][ 1] = new Array('グラディエイター',55,45,55,45,25,15, 0, 0, 0,10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 Skill['P'][ 2] = new Array('ジャガーノート'  ,90,90,90,45,35,20, 0, 0, 0,20, 0, 0, 0, 0, 0, 0, 0, 0, 0,10);
@@ -149,7 +149,7 @@ Skill['P'][25] = new Array('ダークロア'      ,25, 0, 0,15, 0, 0,15,20, 0,10
 Skill['P'][26] = new Array('ジェスター'      ,30, 0, 0,15, 0, 0,45,20, 0,40, 0, 0, 0, 0,30,50,70,90, 0,10);
 Skill['P'][27] = new Array('カラミティ'      ,65, 0, 0,15, 0, 0,15,30, 0,25, 0, 0, 0, 0,30,25,90,55, 0,50);
 
-// ------------------------------ 技能名
+// ------------------------------ Skill name
 Name['Skill'] = new Array();
 Name['Skill'][ 0] = new Array(''    ,'近接','Melee'        ,'接近');
 Name['Skill'][ 1] = new Array('A'   ,'斬る','Slash'        ,'斬殺');
@@ -177,14 +177,14 @@ Name['Skill'][22] = new Array(''    ,'特殊','Special'      ,'其他');
 Name['Skill'][23] = new Array('?'   ,'種族','Racial'       ,'種族');
 Name['Skill'][24] = new Array('_'   ,'騎乗','Horsemanship' ,'騎乘');
 
-// ------------------------------ ログ用
+// ------------------------------ For logging
 Name['Log'] = new Array();
 Name['Log'][0] = new Array('ポイント','Point','點');
 Name['Log'][1] = new Array('潜'      ,'Po'   ,'潛');
 Name['Log'][2] = new Array('限'      ,'Li'   ,'限');
 Name['Log'][3] = new Array('残り'    ,'Rest' ,'其餘');
 
-// ------------------------------ 武器の種類
+// ------------------------------ Type of weapon
 Name['Equip'] = new Array();
 Name['Equip'][ 0] = new Array('そうび','Equipment','裝備');
 Name['Equip'][ 1] = new Array('右手'  ,'RHand'    ,'右手');
@@ -200,7 +200,7 @@ Name['Equip'][10] = new Array('首飾り','Neck'     ,'項鍊');
 Name['Equip'][11] = new Array('ベルト','Belt'     ,'腰帶');
 Name['Equip'][12] = new Array('指輪'  ,'Ring'     ,'戒指');
 
-// ------------------------------ 一覧用
+// ------------------------------ For list
 Name['List'] = new Array();
 Name['List'][0] = new Array('名称'        ,'Name'     ,'名'      );
 Name['List'][1] = new Array('Lv'          ,'Lv'       ,'Lv'      );
@@ -212,7 +212,7 @@ Name['List'][6] = new Array('装備可能職業','Job'      ,'職業'    );
 Name['List'][7] = new Array('装着可能部位','Region'   ,'網站'    );
 Name['List'][8] = new Array('入手経路'    ,'Get route','獲得路由');
 
-// ------------------------------ ルーン
+// ------------------------------ Rune
 Name['Rune'] = new Array();
 Name['Rune'][0] = new Array(
   '<span title="ポーション回復量+5%" class="help">ウンジョー</span>'
@@ -230,7 +230,7 @@ Name['Rune'][2] = new Array(
  ,'<span title="MP自然恢復量+?" class="help">(貝爾卡納)</span>'
 );
 
-// ------------------------------ クランバフ
+// ------------------------------ Cranbuff
 Name['Clan'] = new Array();
 Name['Clan'][ 0] = new Array(12,'クラン'              ,'Clan'             ,'巴生'    );
 Name['Clan'][ 1] = new Array( 5,'フィジカル'          ,'Physical'         ,'體力'    );
@@ -244,7 +244,7 @@ Name['Clan'][ 8] = new Array( 3,'ヒーリング'          ,'Healing'          ,
 Name['Clan'][ 9] = new Array( 3,'コンバット'          ,'Combat'           ,'戰鬥'    );
 Name['Clan'][10] = new Array( 3,'アラウズ'            ,'Arouse'           ,'喚醒'    );
 
-// ------------------------------ 名誉バフ
+// ------------------------------ Honorable buff
 Skill['Honor'] = new Array();
 Skill['Honor'][ 0] = new Array(
   '<span title="体力+1、筋力+1、敏捷+1、器用+1、知性+1" class="help">強さへの探究心</span>'
@@ -385,7 +385,7 @@ Name['POT'][13] = new Array(
  ,'<span title="基本數額的生命值恢復 : 18%" class="help">石版畫</span>'
 );
 
-// ------------------------------ ジェム系
+// ------------------------------ Gem system
 Name['Gem'] = new Array();
 Name['Gem'][0] = new Array();
 Name['Gem'][1] = new Array();
@@ -434,7 +434,7 @@ Name['Title'] = new Array(Ver,'ぱんどらしみゅ','Pandora Saga Simulator','
 Name['Menu'] = new Array('旧シミュレータ','old version','以前的版本');
 
 Name['Tab'] = new Array();
-Name['Tab'][0] = new Array('職業'    ,'JOB'    ,'職業'    );
+Name['Tab'][0] = new Array('職業'    ,'RACE'    ,'職業'    );
 Name['Tab'][1] = new Array('技能'    ,'SKILL'  ,'技能'    );
 Name['Tab'][2] = new Array('攻撃系'  ,'ATTACK' ,'攻擊系統');
 Name['Tab'][3] = new Array('防御系'  ,'DEFENSE','防禦系統');
@@ -481,7 +481,7 @@ Name['Learn'][5] = new Array('持続時間'           ,'Duration'              ,
 Name['Learn'][6] = new Array('習得条件'           ,'Prerequisites'         ,'先修條件');
 Name['Learn'][7] = new Array('装備条件'           ,'Equipment requirements','裝備條件');
 
-// ------------------------------ ステ表示設定
+// ------------------------------ Store display setting
 Set = new Array();
 Set['Status'] = new Array();
 Set['Status'][ 0] = new Array(  6,0,   7,0,   0,0);
@@ -503,7 +503,7 @@ Set['Status'][15] = new Array(  0,0,   0,0, 143,1);
 Set['Status'][16] = new Array(  0,0,   0,0, 144,1);
 Set['Status'][17] = new Array(146,1, 147,1, 145,1);
 
-// ------------------------------ 攻撃系ステ表示設定
+// ------------------------------ Attack system station display setting
 Set['ATK'] = new Array();
 Set['ATK'][ 0] = new Array( 22,1,  34,0,  43,1,   0,1,  85,1,   0,0);
 Set['ATK'][ 1] = new Array( 23,1,  35,0,  44,1,   0,1,  86,1,   0,0);
@@ -521,7 +521,7 @@ Set['ATK'][12] = new Array( 32,1,   0,0,   0,0,   0,1, 119,1, 120,1);
 Set['ATK'][13] = new Array(  0,0,   0,0,   0,0,   0,1, 123,1, 124,1);
 Set['ATK'][14] = new Array(  0,0,   0,0,   0,0,   0,1, 129,1, 130,1);
 
-// ------------------------------ 防御系ステ表示設定
+// ------------------------------ Defense station display setting
 Set['RES'] = new Array();
 Set['RES'][ 0] = new Array( 12,0,  13,0,   0,1, 148,1);
 Set['RES'][ 1] = new Array(  9,1,  10,1,   0,1, 149,1);
@@ -537,7 +537,7 @@ Set['RES'][10] = new Array( 58,1, 137,1,   0,1, 159,1);
 Set['RES'][11] = new Array( 59,1, 162,1,   0,1, 160,1);
 Set['RES'][12] = new Array( 82,1,  83,1,   0,1, 161,1);
 
-// ------------------------------ バフ表示設定
+// ------------------------------ Buff display setting
 Set['Buff'] = new Array();
 Set['Buff'][ 0] = new Array( 0, 7, 0,   1, 4, 0,  14, 3, 5);
 Set['Buff'][ 1] = new Array( 0, 8, 0,   3, 2, 1,  14, 4, 0);
@@ -556,7 +556,7 @@ Set['Buff'][13] = new Array( 0, 0, 0,   8, 1, 1,  18,10, 8);
 Set['Buff'][14] = new Array( 0, 0, 0,  20, 3, 0,  20, 7, 9);
 Set['Buff'][15] = new Array( 0, 0, 0,   0, 0, 0,  21, 7,10);
 
-// ------------------------------ スキル表示設定
+// ------------------------------ Skill display setting
 Name['Text']['Skill'] = new Array();
 Name['Text']['Skill']['Heal'] = new Array();
 Name['Text']['Skill']['Heal'][ 0] = new Array(Skill[0][13][ 5][0],Skill[1][13][ 5][0],Skill[2][13][ 5][0]);

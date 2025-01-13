@@ -146,8 +146,8 @@ function ListCreate(a) {
   switch (a) {
     case 'Equip':
       xx[0] = 44;
-      xx[1] = 10; // 装備可能種族フラグ開始番号
-      xx[2] = 16; // 装備可能職業フラグ開始番号
+      xx[1] = 10; // Equipped race flag start number
+      xx[2] = 16; // Equipmentable occupational flag start number
       xx[3] = new Array();
       for (i=0;i<=13;i++)
         tmp[i] = new Array();

@@ -114,35 +114,42 @@
       <ul> <!-- Top button part -->
         <li style="width:801px;">
           <ul>
-            <li class="btn1" style="margin:0px 5px 0px 10px;padding:1px 6px 0px 7px;width:120px;line-height:14px;"><a href="./readme.txt"><div>readme</div></a></li>
-            <li class="btn1" style="margin-right:5px;padding:1px 6px 0px 7px;width:120px;line-height:14px;"><a href="http://awayfromkuma.blog87.fc2.com/"><div>blog</div></a></li>
-            <li class="btn1" style="padding:1px 6px 0px 7px;width:120px;line-height:14px;"><a href="./old/"><div id="TextMenu">旧シミュレータ</div></a></li>
+            <li class="btn1" style="margin:0px 5px 0px 10px;padding:1px 6px 0px 7px;width:120px;line-height:14px;"><a href="./README.md"><div>readme</div></a></li>
+            <!-- <li class="btn1" style="margin-right:5px;padding:1px 6px 0px 7px;width:120px;line-height:14px;"><a href="http://awayfromkuma.blog87.fc2.com/"><div>blog</div></a></li> -->
+            <li class="btn1" style="padding:1px 6px 0px 7px;width:120px;line-height:14px;"><a href="http://pansaga3.web.fc2.com/simu/"><div id="TextMenu">旧シミュレータ</div></a></li>
+          </ul>
+          <ul>
+            <li style="margin-top:3px;padding:0px 1px;width:76px;line-height:16px;text-align:right;">Language: </li>
+            <li id="Lang_1" onclick="Flag[0]=1;$('Lang_0').className=(Flag[0]==0)?'btn1_on':'btn1_off';$('Lang_1').className=(Flag[0]==1)?'btn1_on':'btn1_off';$('Lang_2').className=(Flag[0]==2)?'btn1_on':'btn1_off';TextSet();Log();return false;" class="btn1_off" style="margin:3px 5px 0px 0px;padding:0px 1px;width:30px;line-height:16px;text-align:center;"><div title="English">EN</div></li>
+            <li id="Lang_0" onclick="Flag[0]=0;$('Lang_0').className=(Flag[0]==0)?'btn1_on':'btn1_off';$('Lang_1').className=(Flag[0]==1)?'btn1_on':'btn1_off';$('Lang_2').className=(Flag[0]==2)?'btn1_on':'btn1_off';TextSet();Log();return false;" class="btn1_off" style="margin:3px 5px 0px 4px;padding:0px 1px;width:30px;line-height:16px;text-align:center;"><div title="日本語">JP</div></li>
+            <li id="Lang_2" onclick="Flag[0]=2;$('Lang_0').className=(Flag[0]==0)?'btn1_on':'btn1_off';$('Lang_1').className=(Flag[0]==1)?'btn1_on':'btn1_off';$('Lang_2').className=(Flag[0]==2)?'btn1_on':'btn1_off';TextSet();Log();return false;" class="btn1_off" style="margin-top:3px;padding:0px 1px;width:30px;line-height:16px;text-align:center;"><div title="繁体">TW</div></li>
           </ul>
         </li>
         <li style="padding:0px 1px;width:76px;line-height:16px;text-align:right;">last update</li>
         <li id="UPData" style="padding:0px 1px;width:111px;line-height:16px;text-align:center;">2011 05/19 12:00</li>
       </ul>
-      <ul> <!-- tab -->
-        <li style="margin-top:3px;width:500px;height:25px;">
-          <ul>
-            <li id="Tab_0_0" onclick="Flag[2]=(Flag[2]==1)?0:1;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:10px;width:63px;text-align:center;"><div id="TextTab_0">職業</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
-            <li id="Tab_1_0" onclick="Flag[2]=(Flag[2]==2)?0:2;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:78px;width:63px;text-align:center;"><div id="TextTab_1">技能</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
-            <li id="Tab_2_0" onclick="Flag[2]=(Flag[2]==3)?0:3;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';CalcSet('ALL',1);" class="tab_off" style="position:absolute;bottom:-1px;left:146px;width:63px;text-align:center;"><div id="TextTab_2">攻撃系</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
-            <li id="Tab_3_0" onclick="Flag[2]=(Flag[2]==4)?0:4;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';CalcSet('ALL',1);" class="tab_off" style="position:absolute;bottom:-1px;left:214px;width:63px;text-align:center;"><div id="TextTab_3">防御系</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
-            <li id="Tab_4_0" onclick="Flag[2]=(Flag[2]==5)?0:5;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:282px;width:63px;text-align:center;"><div id="TextTab_4">バフ</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
-            <li id="Tab_5_0" onclick="Flag[2]=(Flag[2]==6)?0:6;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:350px;width:63px;text-align:center;"><div id="TextTab_5">ログ</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
-            <li id="Tab_6_0" onclick="Flag[2]=(Flag[2]==7)?0:7;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:418px;width:63px;text-align:center;"><div id="TextTab_6">ファイル</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
-          </ul>
-        </li>
+      
+      <!-- <ul> right part
         <li style="margin-top:3px;width:30px;line-height:16px;text-align:right;">CSS</li>
         <li id="CSS_0" onclick="Flag[1]=0;$('CSS').href=CSSFile[Flag[1]];$('CSS_0').className=(Flag[1]==0)?'btn1_on':'btn1_off';$('CSS_1').className=(Flag[1]==1)?'btn1_on':'btn1_off';$('CSS_2').className=(Flag[1]==2)?'btn1_on':'btn1_off';" class="btn1_off" style="margin:3px 5px 0px 7px;padding:1px 6px 0px 7px;width:70px;line-height:14px;text-align:center;"><div>heavy</div></li>
         <li id="CSS_1" onclick="Flag[1]=1;$('CSS').href=CSSFile[Flag[1]];$('CSS_0').className=(Flag[1]==0)?'btn1_on':'btn1_off';$('CSS_1').className=(Flag[1]==1)?'btn1_on':'btn1_off';$('CSS_2').className=(Flag[1]==2)?'btn1_on':'btn1_off';" class="btn1_off" style="margin:3px 5px 0px 0px;padding:1px 6px 0px 7px;width:70px;line-height:14px;text-align:center;"><div>medium</div></li>
         <li id="CSS_2" onclick="Flag[1]=2;$('CSS').href=CSSFile[Flag[1]];$('CSS_0').className=(Flag[1]==0)?'btn1_on':'btn1_off';$('CSS_1').className=(Flag[1]==1)?'btn1_on':'btn1_off';$('CSS_2').className=(Flag[1]==2)?'btn1_on':'btn1_off';" class="btn1_off" style="margin:3px 0px 0px 0px;padding:1px 6px 0px 7px;width:70px;line-height:14px;text-align:center;"><div>light</div></li>
-        <li style="margin-top:3px;padding:0px 1px;width:76px;line-height:16px;text-align:right;">language</li>
-        <li id="Lang_0" onclick="Flag[0]=0;$('Lang_0').className=(Flag[0]==0)?'btn1_on':'btn1_off';$('Lang_1').className=(Flag[0]==1)?'btn1_on':'btn1_off';$('Lang_2').className=(Flag[0]==2)?'btn1_on':'btn1_off';TextSet();Log();return false;" class="btn1_off" style="margin:3px 5px 0px 4px;padding:0px 1px;width:30px;line-height:16px;text-align:center;"><div title="日本語">JP</div></li>
-        <li id="Lang_1" onclick="Flag[0]=1;$('Lang_0').className=(Flag[0]==0)?'btn1_on':'btn1_off';$('Lang_1').className=(Flag[0]==1)?'btn1_on':'btn1_off';$('Lang_2').className=(Flag[0]==2)?'btn1_on':'btn1_off';TextSet();Log();return false;" class="btn1_off" style="margin:3px 5px 0px 0px;padding:0px 1px;width:30px;line-height:16px;text-align:center;"><div title="English">EN</div></li>
-        <li id="Lang_2" onclick="Flag[0]=2;$('Lang_0').className=(Flag[0]==0)?'btn1_on':'btn1_off';$('Lang_1').className=(Flag[0]==1)?'btn1_on':'btn1_off';$('Lang_2').className=(Flag[0]==2)?'btn1_on':'btn1_off';TextSet();Log();return false;" class="btn1_off" style="margin-top:3px;padding:0px 1px;width:30px;line-height:16px;text-align:center;"><div title="繁体">TW</div></li>
+      </ul> -->
+
+      <ul> <!-- Tabs -->
+        <li style="margin-top:3px; margin-bottom:2px; width:100%; height:25px;">
+          <ul>
+            <li id="Tab_0_0" onclick="Flag[2]=(Flag[2]==1)?0:1;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:10px;width:63px;text-align:center;"><div id="TextTab_0">RACE</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
+            <li id="Tab_1_0" onclick="Flag[2]=(Flag[2]==2)?0:2;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:78px;width:63px;text-align:center;"><div id="TextTab_1">SKILL</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
+            <li id="Tab_2_0" onclick="Flag[2]=(Flag[2]==3)?0:3;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';CalcSet('ALL',1);" class="tab_off" style="position:absolute;bottom:-1px;left:146px;width:63px;text-align:center;"><div id="TextTab_2">ATTACK</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
+            <li id="Tab_3_0" onclick="Flag[2]=(Flag[2]==4)?0:4;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';CalcSet('ALL',1);" class="tab_off" style="position:absolute;bottom:-1px;left:214px;width:63px;text-align:center;"><div id="TextTab_3">DEFENSE</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
+            <li id="Tab_4_0" onclick="Flag[2]=(Flag[2]==5)?0:5;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:282px;width:63px;text-align:center;"><div id="TextTab_4">BUFF</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
+            <li id="Tab_5_0" onclick="Flag[2]=(Flag[2]==6)?0:6;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:350px;width:63px;text-align:center;"><div id="TextTab_5">LOG</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
+            <li id="Tab_6_0" onclick="Flag[2]=(Flag[2]==7)?0:7;$('Tab_0_0').className=(Flag[2]==1)?'tab_on':'tab_off';$('Tab_1_0').className=(Flag[2]==2)?'tab_on':'tab_off';$('Tab_2_0').className=(Flag[2]==3)?'tab_on':'tab_off';$('Tab_3_0').className=(Flag[2]==4)?'tab_on':'tab_off';$('Tab_4_0').className=(Flag[2]==5)?'tab_on':'tab_off';$('Tab_5_0').className=(Flag[2]==6)?'tab_on':'tab_off';$('Tab_6_0').className=(Flag[2]==7)?'tab_on':'tab_off';$('Tab_0_1').style.display=(Flag[2]==1)?'inline':'none';$('Tab_1_1').style.display=(Flag[2]==2)?'inline':'none';$('Tab_2_1').style.display=(Flag[2]==3)?'inline':'none';$('Tab_3_1').style.display=(Flag[2]==4)?'inline':'none';$('Tab_4_1').style.display=(Flag[2]==5)?'inline':'none';$('Tab_5_1').style.display=(Flag[2]==6)?'inline':'none';$('Tab_6_1').style.display=(Flag[2]==7)?'inline':'none';" class="tab_off" style="position:absolute;bottom:-1px;left:418px;width:63px;text-align:center;"><div id="TextTab_6">FILE</div><span class="col_bg" style="z-index:2;position:absolute;bottom:-1px;left:0px;width:100%;height:3px;"></span></li>
+          </ul>
+        </li>
       </ul>
+
       <ul> <!-- Main part -->
         <li class="col_bg main" style="padding:3px;width:984px;">
           <ul>
@@ -157,14 +164,14 @@
                         <li class="col_bg2" style="padding:2px;">
                           <ul>
                             <li style="margin-right:2px;width:142px;">
-                              <ul><li class="head col_txt" style="width:100%;">種族</li></ul>
-                              <ul><li id="InRace" style="margin-bottom:10px;width:100%;height:46px;"></li></ul>
-                              <ul><li class="head col_txt" style="width:100%;">種族技能</li></ul>
-                              <ul><li id="InRSkill" style="width:100%;height:45px;"></li></ul>
+                              <ul><li class="head col_txt" style="width:100%;">Race</li></ul>
+                              <ul><li id="InRace" style="margin-bottom:10px;width:100%;;"></li></ul>
+                              <ul><li class="head col_txt" style="width:100%;">Racial skill</li></ul>
+                              <ul><li id="InRSkill" style="width:100%;;"></li></ul>
                             </li>
-                            <li class="head col_txt" style="width:144px;">職業</li>
+                            <li class="head col_txt" style="width:144px;">Job<li>
                           </ul>
-                          <ul><li id="InJob" style="width:144px;height:118px;"></li></ul>
+                          <ul><li id="InJob" style="width:144px;"></li></ul>
                         </li>
                       </ul>
                     </li>
@@ -460,11 +467,11 @@
                 </li>
               </ul>
             </li>
-            <!-- タブここまで -->
+            <!-- Tabs to here -->
           </ul>
           <ul><li id="Title" class="title" style="padding-top:2px;width:100%;line-height:16px;text-align:center;">ぱんどらしみゅ x.xx</li></ul>
           <ul>
-            <!-- 1列目 -->
+            <!-- First row -->
             <li style="padding-top:3px;width:402px;">
               <ul>
                 <li id="Text_0" class="input_lt" style="width:29px;text-align:center;">種族</li>
@@ -618,7 +625,8 @@
           </ul>
         </li>
       </ul>
-      <ul> <!-- 装備部 -->
+
+      <ul> <!-- Equipment part -->
         <li class="col_bg main" style="margin-top:15px;padding:3px;width:984px;">
           <ul><li id="TextEquip_0" class="title" style="padding-top:2px;width:100%;line-height:16px;text-align:center;">そうび</li></ul>
           <ul>
@@ -814,14 +822,14 @@
     </li>
   </ul>
 </div>
-<div id="test" style="position:absolute;top:0px;left:300px;"></div>
+
+<!-- <div id="test" style="position:absolute;top:0px;left:300px;"></div>
 <div id="test2" style="position:absolute;bottom:0px;left:200px;background:#fff;"></div>
-<div id="test3" style="position:absolute;bottom:0px;left:400px;background:#fff;"></div>
+<div id="test3" style="position:absolute;bottom:0px;left:400px;background:#fff;"></div> -->
 
 <!-- ================================================================================================================================== --> 
 
 <script type="text/javascript">
-
 // <![CDATA[
     ts = $('test');
     ts2 = $('test2');
@@ -859,9 +867,9 @@
     $('Lang_0').className = (Flag[0] == 0) ? 'btn1_on': 'btn1_off';
     $('Lang_1').className = (Flag[0] == 1) ? 'btn1_on': 'btn1_off';
     $('Lang_2').className = (Flag[0] == 2) ? 'btn1_on': 'btn1_off';
-    $('CSS_0').className  = (Flag[1] == 0) ? 'btn1_on': 'btn1_off';
-    $('CSS_1').className  = (Flag[1] == 1) ? 'btn1_on': 'btn1_off';
-    $('CSS_2').className  = (Flag[1] == 2) ? 'btn1_on': 'btn1_off';
+    // $('CSS_0').className  = (Flag[1] == 0) ? 'btn1_on': 'btn1_off';
+    // $('CSS_1').className  = (Flag[1] == 1) ? 'btn1_on': 'btn1_off';
+    // $('CSS_2').className  = (Flag[1] == 2) ? 'btn1_on': 'btn1_off';
     $('Tab_0_0').className = (Flag[2] == 1) ? 'tab_on': 'tab_off';
     $('Tab_1_0').className = (Flag[2] == 2) ? 'tab_on': 'tab_off';
     $('Tab_2_0').className = (Flag[2] == 3) ? 'tab_on': 'tab_off';

@@ -563,7 +563,7 @@ for (i=0;i<=MaxLv;i++) {
 // -------------------------------------------------------------------------------------
 function Log(a,b,c) {
   var a,b,c,i,j,k,l,tmp,xx;
-  if (Flag[4]) { // LogFlagが真の時だけ実行する
+  if (Flag[4]) { // LogFlag Execute only when it is true
     xx = new Array();
 
          if (b == 'STA') c = 0;
@@ -573,7 +573,7 @@ function Log(a,b,c) {
     else if (b == 'SPR') c = 4;
     else if (b == 'INT') c = 5;
     switch (a) {
-      case 'Lev': // Lvを動かした場合、現在の値と比較用の値を格納する
+      case 'Lev': // Lv If you move store the current value and the value for comparison
         dLog[Status['Lev'][0]]['Flag'] = 1;
         dLog[Status['Lev'][0]]['Point'][0] = Status['StP'][0];
         dLog[Status['Lev'][0]]['Point'][1] = Status['StP'][0];
@@ -601,7 +601,7 @@ function Log(a,b,c) {
 tmp = Name['Race'][Status['Job'][0]][Flag[0]] + ' / ' + Name['Race']['Skill'][Status['Job'][0]][Status['Job'][1]][Flag[0]] + ' / ' + Name['Job'][Status['Job'][2]][Flag[0] + 2] + '\n';
 tmp += '-------------------------------------------------\n';
 for (i=MaxLv;i>0;i--) {
-  if (dLog[i]['Flag']) { // 現在の値と比較用の値が入力されている場合のみ書き出す
+  if (dLog[i]['Flag']) { // Exit only when the current value and the comparison value is entered
     tmp += 'Lv:' + zeroPadding(2,1,i) + '  ' + Name['Log'][0][Flag[0]] + ':' + zeroPadding(3,1,dLog[i]['Point'][0]) + '/' + zeroPadding(3,1,dLog[i]['Point'][2]) + '/' + zeroPadding(3,1,dLog[i]['Point'][4]) + '\n';
     tmp += '  ' + Name['Option'][0][Flag[0] + 3] + ':' + zeroPadding(2,1,dLog[i]['Status'][0][0]) + ' ' + Name['Option'][1][Flag[0] + 3] + ':' + zeroPadding(2,1,dLog[i]['Status'][1][0]) + ' ' + Name['Option'][2][Flag[0] + 3] + ':' + zeroPadding(2,1,dLog[i]['Status'][2][0]) + ' ' + Name['Option'][3][Flag[0] + 3] + ':' + zeroPadding(2,1,dLog[i]['Status'][3][0]) + ' ' + Name['Option'][3][Flag[0] + 3] + ':' + zeroPadding(2,1,dLog[i]['Status'][4][0]) + ' ' + Name['Option'][4][Flag[0] + 3] + ':' + zeroPadding(2,1,dLog[i]['Status'][5][0]) + '\n';
     for (j=0;j<6;j++) {
