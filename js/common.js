@@ -56,29 +56,29 @@ function Message(a,b) {
         tmp[0] = '　 _ 　　∩<br />(　ﾟ∀ﾟ)彡<br />　⊂彡';
         tmp[1] = (CheatFlag) ? tmp[1] : 'おｐｐ';
       } else if (tmp[2] == 10) {
-        tmp[0] = 'インペリアルクロス！！<br />　\'`ｨ(´∀｀∩<br />ﾊﾟﾘｲ(´∀｀∩ \'`ｨ(´∀｀∩ \'`ｨ(´∀｀∩<br />　\'`ｨ(´∀｀∩';
+        tmp[0] = 'Imperial Cross!!<br />　\'`ｨ(´∀｀∩<br />ﾊﾟﾘｲ(´∀｀∩ \'`ｨ(´∀｀∩ \'`ｨ(´∀｀∩<br />　\'`ｨ(´∀｀∩';
         tmp[1] = (CheatFlag) ? tmp[1] : 'パリイ!!&nbsp;パリイ!!&nbsp;パリイ!!';
       } else if (tmp[2] == 20) {
-        tmp[0] = 'インペリアルアロー！！<br />　　　　　　\'`ｨ(´∀｀∩<br />…(´д｀；) \'`ｨ(´∀｀∩ \'`ｨ(´∀｀∩<br />　　　　　　\'`ｨ(´∀｀∩';
+        tmp[0] = 'Imperial Arrow!!<br />　　　　　　\'`ｨ(´∀｀∩<br />…(´д｀；) \'`ｨ(´∀｀∩ \'`ｨ(´∀｀∩<br />　　　　　　\'`ｨ(´∀｀∩';
         tmp[1] = (CheatFlag) ? tmp[1] : 'ていこく&nbsp;ぼうさつ&nbsp;の&nbsp;れきし';
       } else if (tmp[2] == 30) {
-        tmp[0] = 'な　なにをする　きさまらー！';
-        tmp[1] = (CheatFlag) ? tmp[1] : 'ころしてでも&nbsp;&nbsp;うばいとる'
+        tmp[0] = 'What do you do!';
+        tmp[1] = (CheatFlag) ? tmp[1] : 'Even&nbsp;&nbsp;Ubai'
       } else if (tmp[2] == 40) {
         tmp[0] = '(ﾟдﾟ)';
-        tmp[1] = (CheatFlag) ? tmp[1] : 'こっち見んな'
+        tmp[1] = (CheatFlag) ? tmp[1] : 'Don\'t look here'
       } else if (tmp[2] == 50) {
-        tmp[0] = 'ぬるぽ';
-        tmp[1] = (CheatFlag) ? tmp[1] : 'ｶﾞｯ'
+        tmp[0] = 'Woven';
+        tmp[1] = (CheatFlag) ? tmp[1] : 'Gag'
       } else if (tmp[2] == 60) {
         tmp[0] = '∧<br />　(ﾟ、｡｀フ<br />　(uu ,,)o';
-        tmp[1] = (CheatFlag) ? tmp[1] : 'うん？'
+        tmp[1] = (CheatFlag) ? tmp[1] : 'Yeah？'
       } else if (tmp[2] == 70) {
         tmp[0] = ' _,,..,,,,_<br />&nbsp;　 　/ ,\' 3　 `ヽｰっ<br />&nbsp;　　 l　　 ⊃　⌒_つ<br />　 　`\'ｰ---‐\'\'\'\'\'"';
         tmp[1] = (CheatFlag) ? tmp[1] : '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
       } else if (tmp[2] == 80) {
         tmp[0] = '〃∩ ∧＿∧<br />&nbsp;⊂⌒（ 　・ω・）<br />&nbsp;　 ｀ヽ_っ⌒/⌒ｃ<br />　　　　 ⌒ ⌒';
-        tmp[1] = (CheatFlag) ? tmp[1] : 'はいはいわろすわろす'
+        tmp[1] = (CheatFlag) ? tmp[1] : 'Yes yes'
       } else {
         tmp[0] = '\'`ｨ(´∀｀∩';
         tmp[1] = (CheatFlag) ? tmp[1] : '\'`ｨ(´∀｀∩';
