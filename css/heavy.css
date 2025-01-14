@@ -5,7 +5,15 @@ body,table,textarea,input,select,li,ul {
   font-size:9pt;
   color:rgba(  150,  181,  199, 1.0);
 }
-body   {margin:10px 10px 1000px 10px; background-color: #232830;}
+body {
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  margin-top: 15px; 
+  margin-bottom: 80px;
+  /* box-sizing: border-box; */
+  background-color: #232830;
+}
 select {background-color: #4e5563; border-width:0px;}
 input  {margin:0px;padding:0px;}
 input[type=checkbox]
