@@ -640,46 +640,46 @@ function CalcSet(a,b,c,d) {
         SkillList('Adeptness',b);
       SkillList('Create');
       SkillList('Color');
-      if (Status['Job'][2] >= 0 && Status['Job'][2] <= 6 && b >= 1 && b <= 5) { // ヲリ系：回復量増加：近接系列
+      if (Status['Job'][2] >= 0 && Status['Job'][2] <= 6 && b >= 1 && b <= 5) { // Oli system: Increased recovery: Nearly affiliated
         Calc('POT');Calc('POT_A');Calc('POT_B');
       }
-      if (Status['Job'][2] >= 1 && Status['Job'][2] <= 3 && b >= 1 && b <= 5) // グラ系：ハイパワー：近接系列
+      if (Status['Job'][2] >= 1 && Status['Job'][2] <= 3 && b >= 1 && b <= 5) // Gra system: High Power: Nearly affiliated
         Calc('WeaDAM');
-      if (Flag['0_11'] && b >= 1 && b <= 5) // デスペラード：近接系列
+      if (Flag['0_11'] && b >= 1 && b <= 5) // Desperado: Nearly affiliated
         Calc('ATK');
-      if (Flag['3_2'] && b >= 3) // イエール：払う
+      if (Flag['3_2'] && b >= 3) // Jer: Pay
         Calc('Cri');
-      if (Status['Job'][2] == 6 && b == 5) // パラ：フィラクテリー：防御
+      if (Status['Job'][2] == 6 && b == 5) // Para: Philactie: Defense
         Calc('RESMagic');
-      if (Status['Job'][2] >= 8 && Status['Job'][2] <= 10 && b >= 7 && b <= 11) // 弓系：鷹の目：技巧系列
+      if (Status['Job'][2] >= 8 && Status['Job'][2] <= 10 && b >= 7 && b <= 11) // Bow system: Hawk eyes: technical series
         Calc('ACC');
-      if (Status['Job'][2] >= 11 && Status['Job'][2] <= 13 && b >= 7 && b <= 11) // エジェ系：クイックステップ：技巧系列
+      if (Status['Job'][2] >= 11 && Status['Job'][2] <= 13 && b >= 7 && b <= 11) // Ega system: Quick Step: Technical series
         Calc('Dodge');
-      if (Flag['8_1'] && b >= 8) // フォックスグローブ：調合
+      if (Flag['8_1'] && b >= 8) // Fox Glove: Memorial
         Calc('DAMPoison');
-      if (b == 8) { // 調合
+      if (b == 8) { // Formation
         Calc('Toxify');Calc('ToxicAura');
       }
-      if (Status['Job'][2] >= 15 && Status['Job'][2] <= 17 && b >= 13 && b <= 16) // プリ系：インスピレーション：祈祷系列
+      if (Status['Job'][2] >= 15 && Status['Job'][2] <= 17 && b >= 13 && b <= 16) // Pre -system: Inspiration: Prayer affiliate
         Calc('SPR');
-      if (Status['Job'][2] >= 18 && Status['Job'][2] <= 20 && b >= 13 && b <= 16) { // アセ系：ホーリーディバイン：祈祷系列
+      if (Status['Job'][2] >= 18 && Status['Job'][2] <= 20 && b >= 13 && b <= 16) { // Ase -based: Holy Divine: Prayer affiliate
         Calc('RESPoison');Calc('RESCharm');Calc('RESMagic');
       }
-      if (b == 13) { // 慈愛
+      if (b == 13) { // love
         Calc('FirstAid');Calc('Heal');Calc('HealingAura');Calc('Sanctuary');Calc('Regenerate');Calc('Restoration');
       }
-      if (b == 14) { // 祝福
+      if (b == 14) { // bless
         Calc('Velox');Calc('LapisMedio');Calc('GroupBarrier');Calc('Enchantment');
       }
-      if (b == 16) { // 聖歌
+      if (b == 16) { // chant
         Calc('MinstrelSong');Calc('PeacefulHymn');Calc('SageSong');
       }
-      if (Status['Job'][2] >= 22 && Status['Job'][2] <= 24 && b >= 18 && b <= 21) // WIZ系：魔力上昇：魔術系列
+      if (Status['Job'][2] >= 22 && Status['Job'][2] <= 24 && b >= 18 && b <= 21) // WIZ System: Magic rise: Magical series
         Calc('MATK');
-      if (Status['Job'][2] >= 25 && Status['Job'][2] <= 27 && b >= 18 && b <= 21) { // ロア系：ダークバインド：魔術系列
+      if (Status['Job'][2] >= 25 && Status['Job'][2] <= 27 && b >= 18 && b <= 21) { // Rore: Dark Bind: Magic series
         Calc('RESFire');Calc('RESIce');Calc('RESLightning');
       }
-      if (b == 24) // 騎乗ステータス開放率：騎乗
+      if (b == 24) // Riding status opening rate: Riding
         CalcSet('Horse');
     break;
     case 'Equip': EquipCheck(); break;
@@ -738,9 +738,9 @@ function StatusColor(a,b,c,d) {
 }
 // -------------------------------------------------------------------------------------
 function EquipOption(a,b,c,d,e,f,g) {
-// 魂とか鍛錬値とか
-// a:アイテムID b:ジェムの種類 c:ジェムの属性 d:鍛錬値 e:魂1 f:魂2 g:魂3
-// 戻り値 例:毒の ダブルヘイスティ トゥワイス ミスリルソード +10
+// Souls and training values
+// A: Item ID B: Type of gem C: Gem attribute d: Training value e: Soul 1: Soul 2 G: Soul 3
+// Return value Example: Double Hatty Touime Misrill Sword +10
   var a,b,c,d,e,f,g,tmp;
   tmp = new Array();
   tmp[1] = Math.floor(a / 10000);

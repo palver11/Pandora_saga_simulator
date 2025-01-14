@@ -494,10 +494,10 @@
                     </li>
                     <li style="position:relative;width:37px;height:22px;">
                       <ul>
-                        <li style="position:absolute;top:0px;left:0px;"><input type="image" src="./image/interface/up1.png" alt="+1" title="+1" onclick="StatusMove('Lev',1);CalcSet('Lev');" style="margin-right:2px;" /><input type="image" src="./image/interface/up2.png" alt="+10" title="+10" onclick="StatusMove('Lev',10);CalcSet('Lev');" style="margin-right:2px;" /><input type="image" src="./image/interface/up3.png" alt="max" title="max" onclick="StatusMove('Lev',99);CalcSet('Lev');" /></li>
+                        <li style="position:absolute;top:0px;left:0px;"><input type="image" src="./image/interface/up1.png" alt="+1" title="+1" onclick="StatusMove('Lev',1);CalcSet('Lev');load_skill_icons();" style="margin-right:2px;" /><input type="image" src="./image/interface/up2.png" alt="+10" title="+10" onclick="StatusMove('Lev',10);CalcSet('Lev');" style="margin-right:2px;" /><input type="image" src="./image/interface/up3.png" alt="max" title="max" onclick="StatusMove('Lev',99);CalcSet('Lev');" /></li>
                       </ul>
                       <ul>
-                        <li style="position:absolute;top:10px;left:0px;"><input type="image" src="./image/interface/down1.png" alt="-1" title="-1" onclick="StatusMove('Lev',-1);CalcSet('Lev');" style="margin-right:2px;" /><input type="image" src="./image/interface/down2.png" alt="-10" title="-10" onclick="StatusMove('Lev',-10);CalcSet('Lev');" style="margin-right:2px;" /><input type="image" src="./image/interface/down3.png" alt="min" title="min" onclick="StatusMove('Lev',-99);CalcSet('Lev');" /></li>
+                        <li style="position:absolute;top:10px;left:0px;"><input type="image" src="./image/interface/down1.png" alt="-1" title="-1" onclick="StatusMove('Lev',-1);CalcSet('Lev');load_skill_icons();" style="margin-right:2px;" /><input type="image" src="./image/interface/down2.png" alt="-10" title="-10" onclick="StatusMove('Lev',-10);CalcSet('Lev');" style="margin-right:2px;" /><input type="image" src="./image/interface/down3.png" alt="min" title="min" onclick="StatusMove('Lev',-99);CalcSet('Lev');" /></li>
                       </ul>
                     </li>
                   </ul>
@@ -930,5 +930,19 @@ $('Loading').style.display = 'none';
 $('Loading').style.visibility = 'hidden';
 // ]]>
 </script>
+
+
+<!-- Non-Original functions -->
+ <script>
+function load_skill_icons() {
+    for (i=0;i<Name['Skill'].length;i++) {
+        SkillList('Potential',i);
+        SkillList('Adeptness',i);
+    }
+    SkillList('Create');
+    SkillList('Color');
+}
+ </script>
+
 
 </body></html>
